@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jadalto.github.io/john-and-co-site/sitemap.xml
