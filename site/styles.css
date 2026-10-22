@@ -354,3 +354,8 @@ body.is-draft { padding-bottom: 40px; }
 @media (min-width: 941px) { .footer-grid { grid-template-columns: .9fr 1.1fr 1.4fr; align-items: start; } }
 .status-grid { margin-top: 34px; }
 .hero { background-color: var(--forest-deep); }
+
+/* Contact actions (release 2026-10-21b): email + phone */
+.contact-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.button-secondary { border-color: var(--forest-deep); background: transparent; color: var(--forest-deep); }
+.button-secondary:hover, .button-secondary:focus-visible { background: var(--forest-deep); color: white; }
