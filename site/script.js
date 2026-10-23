@@ -24,3 +24,6 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 940) closeMenu();
 });
 updateHeader();
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && nav?.classList.contains('open')) { closeMenu(); menuButton?.focus(); }
+});

@@ -17,9 +17,9 @@ jobs:
         run: |
           set -e
           cat assets/assets.tgz.b64.part* | base64 -d > /tmp/assets.tgz
-          echo "81a7ea1eebe86a1a4a78f9bf263aece11c85ca19e9029bc7be13bf2328f38b93  /tmp/assets.tgz" | sha256sum -c -
+          echo "c480b1d4cff56ec76a182b05ee106a4ca8f0f7d342d1f811154ee02caf53d202  /tmp/assets.tgz" | sha256sum -c -
           tar xzf /tmp/assets.tgz -C site
-          test -f site/index.html && test -f site/assets/og-image.jpg && test -f site/favicon.ico && grep -qx johnandcoheritage.com site/CNAME
+          test -f site/index.html && test -f site/assets/og-card.jpg && test -f site/favicon.ico && grep -qx johnandcoheritage.com site/CNAME
           find site -type f | sort
       - name: Publish site/ to the gh-pages branch
         run: |
