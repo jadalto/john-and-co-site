@@ -683,3 +683,48 @@ body.is-private main { padding-top: 34px; }
 /* narrow-phone safety (320px): let grid columns shrink and long values wrap */
 .two-col > *, .intro-cols > *, .company-cols > *, .story-grid > * { min-width: 0; }
 .facts th, .facts td { overflow-wrap: anywhere; }
+
+/* ===== ENHANCED ORIGINAL J&Co LOCKUP (2026-10-23 local review; traced original emblem) ===== */
+@font-face { font-family: "Cormorant Garamond HF"; src: url("assets/fonts/cormorant-garamond-700-sub.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+.hf-brand { gap: 14px; }
+.hf-brand .hf-emblem { width: 94px; height: 58px; }
+.hf-words { gap: 0; align-items: stretch; }
+.hf-brand .hf-wordmark { width: 330px; height: auto; }
+.hf-rule { display: block; height: 9px; margin: 5px 0 4px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 9' preserveAspectRatio='none'%3E%3Cpath d='M0 4.5h158M172 4.5h158' stroke='%23BB8F44' stroke-width='1'/%3E%3Cpath d='M165 0.5l4 4-4 4-4-4z' fill='%23BB8F44'/%3E%3C/svg%3E") no-repeat center / 100% 100%; }
+.hf-legal { font-family: "Cormorant Garamond HF", Georgia, "Times New Roman", serif; font-weight: 700; font-variant-caps: normal; text-transform: uppercase; font-size: 10.1px; letter-spacing: .16em; line-height: 1.1; color: #213F2B; white-space: nowrap; text-align: center; margin-right: -.16em; }
+@media (max-width: 1279px) and (min-width: 941px) {
+  .hf-brand { gap: 10px; }
+  .hf-brand .hf-emblem { width: 74px; height: 46px; }
+  .hf-brand .hf-wordmark { width: clamp(150px, calc(100vw - 870px), 300px); }
+  .hf-brand .hf-rule, .hf-brand .hf-legal { display: none; }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  .hf-brand .hf-wordmark { width: 300px; }
+  .hf-brand .hf-rule { display: block; }
+  .hf-brand .hf-legal { display: block; font-size: 9.2px; }
+}
+@media (max-width: 940px) {
+  .hf-brand { gap: 10px; }
+  .hf-brand .hf-emblem { width: 81px; height: 50px; }
+  .hf-brand .hf-wordmark { width: 280px; }
+  .hf-brand .hf-legal { font-size: 8.6px; }
+}
+@media (max-width: 600px) {
+  .hf-brand .hf-emblem { width: 68px; height: 42px; }
+  .hf-brand .hf-wordmark { width: min(210px, calc(100vw - 160px)); }
+  .hf-brand .hf-rule, .hf-brand .hf-legal { display: none; }
+}
+.hf-footer-brand { gap: 14px; }
+.hf-footer-brand .hf-emblem { width: 113px; height: 70px; }
+.hf-footer-brand .hf-words { align-items: stretch; width: min(300px, 100%); }
+.hf-footer-brand .hf-wordmark { width: 100%; height: auto; }
+.hf-footer-brand .hf-rule { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 9' preserveAspectRatio='none'%3E%3Cpath d='M0 4.5h158M172 4.5h158' stroke='%23C99D52' stroke-width='1'/%3E%3Cpath d='M165 0.5l4 4-4 4-4-4z' fill='%23C99D52'/%3E%3C/svg%3E"); margin: 7px 0 6px; }
+.hf-footer-brand .hf-legal { color: #E4C88D; font-size: 12.6px; letter-spacing: .12em; white-space: normal; text-align: left; margin-right: 0; line-height: 1.35; }
+.hf-hero-title img { width: min(640px, 88%); }
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .site-header, .site-header.solid, .site-header.scrolled { padding-inline: 32px; }
+  .hf-brand { gap: 10px; }
+  .hf-brand .hf-emblem { width: 81px; height: 50px; }
+  .hf-brand .hf-wordmark { width: 290px; }
+  .hf-brand .hf-legal { font-size: 8.9px; }
+}
