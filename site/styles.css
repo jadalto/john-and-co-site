@@ -683,6 +683,9 @@ body.is-private main { padding-top: 34px; }
 /* narrow-phone safety (320px): let grid columns shrink and long values wrap */
 .two-col > *, .intro-cols > *, .company-cols > *, .story-grid > * { min-width: 0; }
 .facts th, .facts td { overflow-wrap: anywhere; }
+.related-initiative { max-width: 920px; margin-inline: auto; }
+.related-initiative .button { margin-top: 8px; }
+.related-initiative .small { margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(176,141,60,.35); }
 
 /* ===== ENHANCED ORIGINAL J&Co LOCKUP (2026-10-23 local review; traced original emblem) ===== */
 @font-face { font-family: "Cormorant Garamond HF"; src: url("assets/fonts/cormorant-garamond-700-sub.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
